@@ -1,4 +1,5 @@
 import restar from "./devolucion";
+import fraccionar from "./fraccionar";
 
 const montoVenta = document.querySelector("#monto-venta");
 const efectivo = document.querySelector("#efectivo");
@@ -21,6 +22,6 @@ form.addEventListener("submit", (event) => {
   else
   {
     div.innerHTML = "<p>" + restar(monto_cancelado,monto_de_venta) + "</p>";
-    
   }
+  div.innerHTML += "El monto fraccionado del monto cancelado es: " + fraccionar(monto_cancelado);
 });
