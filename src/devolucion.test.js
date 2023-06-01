@@ -1,7 +1,7 @@
-import sumar from "./devolucion.js";
+import restar from "./devolucion.js";
 
-describe("Sumar", () => {
-  it("deberia sumar dos numeros", () => {
-    expect(sumar(3, 2)).toEqual(5);
+describe("Devolucion", () => {
+  it("deberia restar dos numeros", () => {
+    expect(restar(3, 2)).toEqual(1);
   });
 });
