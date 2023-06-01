@@ -21,5 +21,6 @@ form.addEventListener("submit", (event) => {
   else
   {
     div.innerHTML = "<p>" + restar(monto_cancelado,monto_de_venta) + "</p>";
+    
   }
 });
