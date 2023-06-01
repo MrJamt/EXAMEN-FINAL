@@ -1,16 +1,16 @@
 import restar from "./devolucion";
 
-const first = document.querySelector("#primer-numero");
-const second = document.querySelector("#segundo-numero");
-const form = document.querySelector("#sumar-form");
+const montoVenta = document.querySelector("#monto-venta");
+const efectivo = document.querySelector("#efectivo");
+const form = document.querySelector("#devolucion-form");
 const div = document.querySelector("#resultado-div");
 
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
 
-  const firstNumber = Number.parseInt(first.value);
-  const secondNumber = Number.parseInt(second.value);
+  const precio = Number.parseInt(montoVenta.value);
+  const monto_cancelado = Number.parseInt(efectivo.value);
 
-  div.innerHTML = "<p>" + restar(firstNumber, secondNumber) + "</p>";
+  div.innerHTML = "<p>" + restar(precio, monto_cancelado) + "</p>";
 });
