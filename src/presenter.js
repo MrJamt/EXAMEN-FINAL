@@ -12,5 +12,5 @@ form.addEventListener("submit", (event) => {
   const precio = Number.parseInt(montoVenta.value);
   const monto_cancelado = Number.parseInt(efectivo.value);
 
-  div.innerHTML = "<p>" + restar(precio, monto_cancelado) + "</p>";
+  div.innerHTML = "<p>" + restar(monto_cancelado,precio) + "</p>";
 });
