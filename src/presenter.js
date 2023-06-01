@@ -9,8 +9,17 @@ const div = document.querySelector("#resultado-div");
 form.addEventListener("submit", (event) => {
   event.preventDefault();
 
-  const precio = Number.parseInt(montoVenta.value);
-  const monto_cancelado = Number.parseInt(efectivo.value);
+  let monto_de_venta = Number.parseInt(montoVenta.value);
+  let monto_cancelado = Number.parseInt(efectivo.value);
+  console.log(monto_de_venta);
+  console.log(monto_cancelado);
 
-  div.innerHTML = "<p>" + restar(monto_cancelado,precio) + "</p>";
+  if(monto_de_venta.value!=undefined && monto_cancelado.value!=undefined)
+  {
+    div.innerHTML = "Ingresa ambos datos";
+  }
+  else
+  {
+    div.innerHTML = "<p>" + restar(monto_cancelado,monto_de_venta) + "</p>";
+  }
 });
