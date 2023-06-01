@@ -12,8 +12,6 @@ form.addEventListener("submit", (event) => {
 
   let monto_de_venta = Number.parseInt(montoVenta.value);
   let monto_cancelado = Number.parseInt(efectivo.value);
-  console.log(monto_de_venta);
-  console.log(monto_cancelado);
 
   if(monto_de_venta.value!=undefined && monto_cancelado.value!=undefined)
   {

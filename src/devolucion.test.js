@@ -6,6 +6,9 @@ describe("Devolucion", () => {
     expect(restar(3, 2)).toEqual(1);
   });
   it("si se ingresa uno deberia devolver moneda de ", () => {
-    expect(fraccionar(1)).toEqual(1);
+    expect(fraccionar(1)).toEqual([1]);
+  });
+  it("si se ingresa 13 deberia devolver las monedas 1 2 5 5", () => {
+    expect(fraccionar(13)).toEqual([1,2,5,5]);
   });
 });
